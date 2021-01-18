@@ -1,4 +1,4 @@
-package younus.org;
+package younus.org.model;
 
 
 import javax.persistence.*;
@@ -7,15 +7,15 @@ import javax.persistence.*;
 @Entity //define class entity. jpa create column in database
 public class MyUser {
 
-   @Id //every table has primary so we define id as primary key
-   @GeneratedValue(strategy = GenerationType.AUTO)
-   @Column(name = "id")
+    @Id //every table has primary so we define id as primary key
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Integer id;
-   @Column(name = "name")
+    @Column(name = "name")
     private String userName;
-   @Column(name = "email")
+    @Column(name = "email")
     private String userEmail;
-   @Column(name = "description")
+    @Column(name = "description")
     private String UserDescription;
 
     public String getUserDescription() {
